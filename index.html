@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Guitar Collectors Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Raleway|Roboto" rel="stylesheet">
+<body>
+    <div class="allContent">
+            <div class="header">
+                <h1>Guitar Collectors Game</h1>
+            </div>
+            <div class="manual">
+                <h3><emphasis>Here's how you play the game</emphasis></h3>
+                </br>
+                <ol>
+                    <li>You will be given a random number at the start of the game.</li>
+                    <li>There are four guitars below.</li>
+                    <li>By clicking on a guitar, you will add a specific amount of points to your total score.</li>
+                    <li>You win the game by matching your total score to the random number.</li>
+                    <li>You lose the game if your total score goes above the random number.</li>
+                    <li>The value of each guitar is hidden from you until you click on it.</li>
+                    <li>Each time the game starts, the game will change the values of each crystal.</li>
+                </ol>
+            </div>
+            <div class="fullRow">
+                    <div class="numberGet">
+                        <h2>Number To Get:
+                            <span id= "randomNumber"></span>
+                        </h2>
+                    </div>
+                    <div class="winsAndLosses">
+                        <h2>Wins:
+                            <span id= "numberWins"></span>
+                            </br>
+                            Losses: 
+                            <span id= "numberLosses"></span>
+                        </h2>
+                    </div>
+            </div>
+            <div class="guitars">
+                <img src="assets/images/blueguitar.png" class="guitarImage" id="one" alt="Blue Crystal">
+                <img src="assets/images/greenguitar.png" class="guitarImage" id="two" alt="Green Crystal"><br>
+                <img src="assets/images/redguitar.png" class="guitarImage" id= "three" alt="Red Guitar">
+                <img src="assets/images/yellowguitar.png" class="guitarImage" id= "four" alt="Yellow Crystal">
+            </div>
+            <div class="userTotal">
+                <h2>Your total score is:
+                    <span id="finalTotal"></span>
+                </h2>
+            </div>
+        </div> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js" async></script>       
+</body>
+</html>
