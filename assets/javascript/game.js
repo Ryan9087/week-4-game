@@ -70,7 +70,6 @@ $( document ).ready(function(){
       console.log("New userTotal= " + userTotal);
       $('#finalTotal').text(userTotal);
 
-
             if (userTotal == Random){
             bigWinner();
           }
